@@ -1,0 +1,83 @@
+.product-dialog {
+  border: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  max-width: 950px;
+  width: calc(100% - 64px);
+  max-height: 85dvh;
+  overflow: auto;
+}
+.product-dialog[open] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.product-dialog::backdrop {
+  background: #10170cbd;
+  backdrop-filter: blur(5px);
+}
+.dialog-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--paper);
+  border: 1px solid #bec5b3;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  z-index: 2;
+}
+.dialog-close .icon {
+  width: 17px;
+  height: 17px;
+}
+.dialog-image {
+  min-width: 0;
+  width: 100%;
+  background-image: url("/assets/catalogo.webp");
+  background-size: 200% 200%;
+  aspect-ratio: 4/3;
+  align-self: stretch;
+  min-height: 390px;
+}
+.dialog-content {
+  padding: 50px 36px 38px;
+}
+.dialog-content .eyebrow {
+  font-size: 8px;
+  margin-bottom: 17px;
+}
+.dialog-content h2 {
+  font-size: 37px;
+  letter-spacing: -1px;
+  line-height: 1.15;
+  margin-bottom: 17px;
+}
+.dialog-content > p:not(.eyebrow) {
+  font-size: 12px;
+  color: #717b65;
+  line-height: 1.8;
+}
+.dialog-note {
+  border-top: 1px solid var(--line);
+  padding-top: 15px;
+  margin: 25px 0;
+}
+.dialog-note strong {
+  font-size: 10px;
+  font-weight: 600;
+}
+.dialog-note p {
+  font-size: 10px;
+  line-height: 1.8;
+  color: #818b75;
+  margin: 6px 0 0;
+}
+.dialog-content .button {
+  font-size: 11px;
+  gap: 20px;
+  width: 100%;
+}

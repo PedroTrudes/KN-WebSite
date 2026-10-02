@@ -1,0 +1,53 @@
+.floating-whatsapp {
+  position: fixed;
+  bottom: max(24px, env(safe-area-inset-bottom));
+  right: 28px;
+  z-index: 25;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #242c23;
+  color: #f7f5f0;
+  box-shadow: 0 4px 20px #0003;
+  border: 1px solid #a3ad9666;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  justify-content: center;
+  transition:
+    background 0.25s,
+    transform 0.25s;
+}
+.floating-whatsapp:hover {
+  background: #3a4734;
+  transform: translateY(-3px);
+}
+.floating-whatsapp > .icon {
+  width: 29px;
+  height: 29px;
+  stroke-width: 1.4;
+}
+.floating-whatsapp > span {
+  position: absolute;
+  white-space: nowrap;
+  right: 66px;
+  font-size: 10px;
+  background: #242c23;
+  color: #f7f5f0;
+  padding: 8px 13px;
+  border-radius: 3px;
+  opacity: 0;
+  transform: translateX(5px);
+  pointer-events: none;
+  transition:
+    opacity 0.25s,
+    transform 0.25s;
+}
+.floating-whatsapp:hover > span,
+.floating-whatsapp:focus-visible > span {
+  opacity: 1;
+  transform: none;
+}
+body.dialog-open .floating-whatsapp {
+  visibility: hidden;
+}

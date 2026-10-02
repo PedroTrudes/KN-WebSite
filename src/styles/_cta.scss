@@ -1,0 +1,32 @@
+.final-cta {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #e7e9df;
+  text-align: center;
+  padding: 95px 0 110px;
+}
+.final-cta .eyebrow {
+  font-size: 9px;
+  color: #77816b;
+}
+.final-cta h2 {
+  font-size: 78px;
+  margin-bottom: 26px;
+}
+.final-cta p:not(.eyebrow) {
+  font-size: 13px;
+  color: #727c66;
+  margin-bottom: 29px;
+}
+.cta-watermark {
+  position: absolute;
+  right: -45px;
+  bottom: -80px;
+  font-size: 390px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -40px;
+  color: #dfe3d5;
+  z-index: -1;
+}

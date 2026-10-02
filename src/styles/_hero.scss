@@ -1,0 +1,133 @@
+.hero {
+  height: 790px;
+  min-height: 690px;
+  max-height: 1100px;
+  position: relative;
+  isolation: isolate;
+  background: #33352f;
+  color: var(--paper);
+  overflow: hidden;
+}
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 56%;
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+}
+.hero-shade {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    linear-gradient(90deg, #121610d9 0%, #12161086 47%, #1216100d 100%),
+    linear-gradient(
+      0deg,
+      #11160f99,
+      transparent 30%,
+      transparent 80%,
+      #11160f60
+    );
+}
+.hero-content {
+  padding-top: 201px;
+}
+.hero .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: #e5e4dc;
+  margin-bottom: 27px;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+.small-line {
+  width: 30px;
+  height: 1px;
+  background: #d5d6ca;
+}
+.hero h1 {
+  font-size: 89px;
+  letter-spacing: -3.5px;
+  line-height: 1.05;
+  margin: 0 0 28px;
+  max-width: 840px;
+}
+.hero h1 em {
+  display: inline-block;
+}
+.hero-description {
+  color: #e2e4da;
+  line-height: 1.8;
+  font-size: 14px;
+  max-width: 480px;
+  margin-bottom: 29px;
+}
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+.hero-secondary {
+  font-size: 11px;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  border-bottom: 1px solid #ffffff3d;
+  padding-block: 13px;
+}
+.hero-secondary .icon {
+  width: 18px;
+}
+.hero-bottom {
+  position: absolute;
+  bottom: 32px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.hero-bottom p {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  margin: 0;
+}
+.hero-bottom .icon {
+  width: 14px;
+  height: 14px;
+}
+.scroll-link {
+  font-size: 9px;
+  letter-spacing: 2px;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 50px;
+}
+.scroll-link span {
+  font-size: 23px;
+}
+.image-caption {
+  font-size: 9px;
+  color: #d7d9cf;
+}
+.hero-entrance {
+  animation: entrance 0.85s ease both;
+}
+.hero-entrance:nth-child(2) {
+  animation-delay: 0.12s;
+}
+.hero-entrance:nth-child(3) {
+  animation-delay: 0.24s;
+}
+.hero-entrance:nth-child(4) {
+  animation-delay: 0.36s;
+}

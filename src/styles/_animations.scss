@@ -1,0 +1,21 @@
+.reveal.is-visible {
+  animation: entrance 0.65s ease both;
+}
+.service-card:nth-child(2).is-visible,
+.process-step:nth-child(2).is-visible {
+  animation-delay: 0.08s;
+}
+.service-card:nth-child(3).is-visible,
+.process-step:nth-child(3).is-visible {
+  animation-delay: 0.16s;
+}
+@keyframes entrance {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
