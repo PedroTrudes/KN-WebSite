@@ -1,19 +1,18 @@
-import { messages, whatsappUrl } from "../data/site.js";
-
-export default function FloatingWhatsApp() {
+export default function FloatingWhatsApp({ onOpenQuote }) {
   return (
-    <a
+    <button
+      type="button"
       className="floating-whatsapp"
-      data-whatsapp="geral"
-      href={whatsappUrl(messages["geral"])}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Solicitar orçamento pelo WhatsApp"
+      onClick={onOpenQuote}
+      aria-label="Montar orçamento para enviar pelo WhatsApp"
+      aria-haspopup="dialog"
+      aria-controls="quote-dialog"
+      style={{ border: 0, cursor: "pointer", font: "inherit" }}
     >
       <span>Vamos conversar?</span>
-      <svg className="icon">
-        <use href="#i-wa"></use>
+      <svg className="icon" aria-hidden="true">
+        <use href="#i-wa" />
       </svg>
-    </a>
+    </button>
   );
 }
