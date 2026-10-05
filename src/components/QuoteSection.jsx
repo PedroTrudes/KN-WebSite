@@ -10,7 +10,7 @@ export default function QuoteSection({ onOpenQuote }) {
         </div>
 
         <a
-            className="text-link pointer"
+            className="button button-light pointer"
             onClick={onOpenQuote}
             aria-controls="quote-dialog"
             aria-haspopup="dialog"
