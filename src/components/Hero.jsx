@@ -14,11 +14,11 @@ export default function Hero() {
       <div className="hero-shade"></div>
       <div className="container hero-content">
         <p className="eyebrow hero-entrance">
-          <span className="small-line"></span> FERRO &amp; VIDRO. FEITOS PARA O
+          <span className="small-line"></span> ALUMÍNIO &amp; VIDRO. FEITOS PARA O
           SEU PROJETO.
         </p>
         <h1 id="hero-title" className="hero-entrance">
-          Ferro, vidro
+          Alumínio, vidro
           <br />e novas <em>possibilidades.</em>
         </h1>
         <p className="hero-description hero-entrance">
@@ -57,9 +57,13 @@ export default function Hero() {
         <a href="#servicos" className="scroll-link">
           EXPLORE <span>↓</span>
         </a>
-        <span className="image-caption">
-          Imagem conceitual · referência ilustrativa
-        </span>
+        {
+          /*
+          <span className="image-caption">
+            Imagem conceitual · referência ilustrativa
+          </span>
+          */
+        }
       </div>
     </section>
   );

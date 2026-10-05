@@ -60,7 +60,7 @@ export default function FAQ() {
               </svg>
             </summary>
             <p>
-              Sim. Compartilhe sua ideia para consultar possibilidades em ferro
+              Sim. Compartilhe sua ideia para consultar possibilidades em alumínio
               e vidro. A equipe confirma a viabilidade, os materiais e as
               condições do projeto.
             </p>

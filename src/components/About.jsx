@@ -34,7 +34,7 @@ export default function About() {
           </h2>
           <p>
             Em Iguape, a KN Serralheria e Vidraçaria trabalha com portas,
-            janelas e diferentes soluções em ferro e vidro.
+            janelas e diferentes soluções em alumínio e vidro.
           </p>
           <p>
             Seja para construir, renovar ou dar forma a uma ideia, o primeiro
@@ -42,7 +42,7 @@ export default function About() {
             referências e consulte as possibilidades para o seu imóvel.
           </p>
           <div className="about-details">
-            <span>FERRO &amp; VIDRO</span>
+            <span>ALUMÍNIO &amp; VIDRO</span>
             <span>PROJETOS SOB MEDIDA</span>
             <span>IGUAPE &amp; REGIÃO</span>
           </div>

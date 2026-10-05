@@ -21,7 +21,7 @@ export default function Services() {
           <p className="section-intro">
             Do primeiro desenho aos detalhes do projeto.
             <br />
-            Conheça nossas soluções em ferro e vidro
+            Conheça nossas soluções em alumínio e vidro
             <br />e converse com a equipe sobre o que você precisa.
           </p>
         </Reveal>
@@ -36,7 +36,7 @@ export default function Services() {
             <h3>Portas</h3>
             <p>
               Uma entrada que faz parte da arquitetura. Consulte possibilidades
-              em ferro e vidro para o seu imóvel.
+              em alumínio e vidro para o seu imóvel.
             </p>
             <a
               className="text-link"
@@ -83,7 +83,7 @@ export default function Services() {
               </svg>
               <span>03</span>
             </div>
-            <h3>Ferro &amp; vidro</h3>
+            <h3>Alumínio &amp; vidro</h3>
             <p>
               Cada necessidade abre uma possibilidade. Apresente sua ideia e
               consulte nossos serviços sob medida.
